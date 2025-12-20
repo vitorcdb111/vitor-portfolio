@@ -476,6 +476,15 @@ a:hover {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+.case-gallery-item video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+
 /* VIDEO PLAYER          */
 
 .case-video-wrapper {
