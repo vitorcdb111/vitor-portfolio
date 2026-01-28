@@ -187,81 +187,115 @@
               remained deeply involved in discussions around prioritization, scope, and
               decision-making to keep the project aligned with its goals.
             </p>
+
+            <p>Although Muster is not a traditional game, the systems were designed using the same principles applied to live game ecosystems: player behavior analysis, progression feedback, and long-term engagement signals.</p>
         </div>
       </div>
     </section>
 
-    <!-- DESIGNING A SHARED SPACE -->
-    <section id="project-context" class="case-section case-fullwidth">
-      <h3 class="case-section-heading">DESIGNING A SHARED SPACE</h3>
+    <!-- CORE SYSTEMS DESIGN -->
+    <section id="idea-conception" class="case-section case-fullwidth">
+      <h3 class="case-section-heading">CORE SYSTEMS DESIGN</h3>
 
       <div>
         <div class="case-text">
-              <p>
-                I have worked remotely for many years and across different companies. While
-                working from home brings clear benefits, over time I started to feel the
-                absence of real, spontaneous interaction with colleagues.
-              </p>
-              <p>
-                Most remote tools reduce people to icons in a list, creating an invisible
-                barrier to conversation and turning the work environment into something cold
-                and rigid.
-              </p>
-              <p>
-                When I founded Oak3, one of the first alternatives we explored was Gather, a
-                pixel-art virtual space where teams could build a shared office. Simply
-                having an avatar and moving through a virtual environment brought back a
-                sense of physical presence that I had not felt in remote work for a long
-                time.
-              </p>
-              <p>
-                We used Gather from the very beginning, but over time its limitations became
-                clear. That discomfort led me to research the market and talk with different
-                companies, where I identified recurring pain points related to isolation,
-                lack of presence, and friction in spontaneous communication.
-              </p>
-              <p>
-                One of the first design decisions for Muster was to create a 3D shared space
-                with a more professional tone, reinforcing that this was a work environment
-                rather than a playful abstraction.
-              </p>
-              <p>
-                The perspective was intentionally kept consistent, allowing users to always
-                understand where others were and what was happening around them. This
-                spatial legibility helps users decide when and how to interact, without
-                requiring explicit prompts.
-              </p>
-              <p>
-                Each user has their own desk, and interactions are communicated through
-                simple visual cues, such as avatars gathering together or conversation
-                indicators appearing above them.
-              </p>
-              <p>
-                These signals were designed to act as implicit rules, teaching users how to
-                behave in the space without tutorials or instructions. Presence,
-                availability, and focus are communicated visually, not verbally.
-              </p>
-              <p>
-                Additional layers, such as personal status indicators and optional private
-                spaces, were designed to give users control over their level of social
-                exposure.
-              </p>
-              <p>
-                The broader space was structured to support different social contexts.
-                Meeting rooms, shared areas like a kitchen, and informal spaces encourage
-                movement and create situations similar to real-world office dynamics.
-              </p>
-              <p>
-                This approach works because it builds on behaviors people already understand
-                from physical offices. Instead of forcing users to learn new interaction
-                patterns, Muster recreates familiar social dynamics in a virtual
-                environment.
-              </p>
+            <p>
+              <strong>Presence & Spatial Awareness System</strong>
+            </p>
+
+            <p>
+              Muster was designed to communicate presence through <strong>spatial continuity and visibility</strong> rather than abstract indicators.
+            </p>
+
+            <p>
+              Users always spawn at the office entrance, reinforcing the feeling of arriving at work and naturally exposing them to other occupied spaces and colleagues. From there, they can either move automatically to their desk or navigate the environment manually, reinforcing ownership of space.
+            </p>
+
+            <p>
+              The office layout supports full spatial awareness through camera rotation for global visibility, dynamic wall lowering inspired by <strong>The Sims</strong> to allow visibility between adjacent spaces without breaking spatial logic, and clear level design language where furniture layout and room composition communicate the purpose of each space.
+            </p>
+
+            <p>
+              In parallel, a supporting UI mirrors the world state by displaying online users and their status, the current space the user occupies, and which colleagues are present in each area.
+            </p>
+
+            <p>
+              As users move through the environment, both the world and UI update together, ensuring consistent spatial legibility and reinforcing a shared sense of presence.
+            </p>
+
+            <p>
+              <strong>Social Signaling & Implicit Rules System</strong>
+            </p>
+
+            <p>
+              Social interaction in Muster is guided by <strong>visual signals and implicit rules</strong>, reducing the need for explicit prompts or instructions.
+            </p>
+
+            <p>
+              Through the UI, users can view colleagues, access their profiles, and perform lightweight social actions such as waving to attract attention. When a wave is triggered, it produces a visible icon in the world for nearby users and a sound alert for the recipient.
+            </p>
+
+            <p>
+              Availability states act as implicit behavioral rules. If a user sets their status to busy, certain social actions, such as waving, become unavailable, subtly communicating boundaries without confrontation.
+            </p>
+
+            <p>
+              Additional signals reinforce social awareness through colored status indicators, editable text statuses, and audio icons displayed next to users who are currently speaking, even across different spaces.
+            </p>
+
+            <p>
+              Together, these signals create a readable social layer that communicates availability, interaction, and engagement without requiring direct communication.
+            </p>
+
+            <p>
+              <strong>Interaction & Movement System</strong>
+            </p>
+
+            <p>
+              Interaction in Muster is grounded in <strong>direct spatial action</strong>.
+            </p>
+
+            <p>
+              Users navigate the office through mouse-based movement, clicking on locations, avatars, or interactive objects. Interactive elements are visually highlighted through outlines, clearly signaling affordances.
+            </p>
+
+            <p>
+              Movement and interaction are reinforced through contextual interaction wheels when selecting avatars or objects, keyboard shortcuts supporting frequent actions, and zoom controls allowing users to adjust their spatial focus.
+            </p>
+
+            <p>
+              The office is divided into distinct zones, each supporting localized interaction and audio behavior. Audio follows a proximity-based system where users only hear others within the same zone, volume increases as avatars move closer together, and individual desks create private audio bubbles that preserve personal focus.
+            </p>
+
+            <p>
+              When entering a space, visual feedback reinforces context by dimming other areas and updating the UI with the current location and active participants.
+            </p>
+
+            <p>
+              <strong>Behavioral Aggregation & Feedback Loops</strong>
+            </p>
+
+            <p>
+              Muster translates moment-to-moment behavior into <strong>high-level signals about team dynamics</strong>, without focusing on individual productivity or surveillance.
+            </p>
+
+            <p>
+              Users can optionally report their mood when entering the office. Over time, these inputs allow patterns to emerge, helping leaders understand emotional trends across weeks rather than isolated moments.
+            </p>
+
+            <p>
+              Additionally, the system aggregates time spent in different spaces, co-presence with other users, and interaction frequency across the environment.
+            </p>
+
+            <p>
+              These patterns help surface signals such as social isolation or uneven collaboration, enabling earlier and more informed human conversations. The system is designed to support awareness and context, not control, ensuring feedback loops remain ethical and human-centered.
+            </p>
+
         </div>
       </div>
     </section>
 
-        <!-- GALERIA ENTRE PARÁGRAFOS -->
+    <!-- GALERIA ENTRE PARÁGRAFOS -->
     <div class="case-gallery">
         <figure class="case-gallery-item">
             <img src="images/muster/muster03.png" />
@@ -274,61 +308,58 @@
         </figure>
     </div>
 
-        <!-- SYSTEMS BEHIND THE SPACE -->
+    <!-- DESIGNING A SHARED SPACE -->
     <section id="project-context" class="case-section case-fullwidth">
-      <h3 class="case-section-heading">SYSTEMS BEHIND THE SPACE</h3>
+      <h3 class="case-section-heading">DESIGNING A SHARED SPACE</h3>
 
       <div>
         <div class="case-text">
               <p>
-                In traditional offices, much of team dynamics is understood through informal
-                signals. Managers and teammates naturally perceive who is isolated, who is
-                overloaded, or who has suddenly changed behavior.
+                Designing Muster’s shared space focused on how <strong>spatial layout and visual cues</strong> could communicate social context instantly, without relying on explicit UI prompts, social mechanics, or system-driven feedback.
               </p>
+
               <p>
-                In remote work, most of these signals disappear, leaving teams with little
-                context beyond meetings and task completion.
+                The office uses a consistent 3D perspective to ensure spatial legibility at all times, allowing users to immediately understand where others are and what is happening around them.
               </p>
+
               <p>
-                One of Muster’s core design goals was to recover these signals without
-                introducing invasive or controlling systems.
+                Each user has a clearly defined desk, reinforcing ownership of space and establishing a familiar mental model rooted in real-world offices.
               </p>
+
               <p>
-                Instead of focusing on individual productivity, the platform was designed to
-                observe interaction patterns and spatial behavior at a high level,
-                transforming everyday actions into readable signals about team dynamics.
+                Interactions are communicated through lightweight visual cues such as avatars grouping together, conversation indicators, and subtle animations that act as implicit rules.
               </p>
+
               <p>
-                Behind the scenes, Muster aggregates information such as presence, movement,
-                interaction frequency, and shared spaces usage to reveal trends over time.
+                These signals teach users how to behave in the space without tutorials, making presence, focus, and availability readable at a glance.
               </p>
+
               <p>
-                The intent is not to monitor individuals, but to help teams and leaders
-                understand how collaboration is unfolding and when intervention or support
-                might be needed.
+                Additional layers, such as personal status indicators and optional private areas, give users control over their level of social exposure.
               </p>
+
               <p>
-                Optional self-reported mood indicators further add context, allowing human
-                conversations to happen earlier and more naturally.
+                Whether someone is focused, in a call, or open to interaction, the environment communicates that state visually, reducing friction and social anxiety.
               </p>
+
               <p>
-                Another key system layer was reducing cognitive overload. Remote work often
-                forces people to juggle multiple tools simultaneously, fragmenting attention
-                and breaking flow.
+                The broader layout supports multiple social contexts.
               </p>
+
               <p>
-                Muster was designed as a central workspace where essential tools can coexist
-                within the same environment, minimizing context switching and keeping users
-                focused on collaboration rather than navigation.
+                Meeting rooms, shared areas like a kitchen, and informal spaces encourage movement and recreate familiar office dynamics such as hallway conversations or casual encounters during breaks.
               </p>
+
               <p>
-                Finally, performance and lightness were treated as design principles. The
-                platform needed to feel present without becoming heavy or intrusive.
+                Even automated behaviors, like moving an avatar to a specific area when away, were designed to mirror real-world actions.
               </p>
+
               <p>
-                Every system decision was guided by the idea that Muster should support daily
-                work quietly in the second plane, enhancing awareness and connection without
-                competing for attention.
+                By building on interaction patterns people already understand from physical offices, Muster avoids introducing new social rules.
+              </p>
+
+              <p>
+                The result is a shared space that feels intuitive, readable, and human, supporting collaboration without demanding attention.
               </p>
         </div>
       </div>
@@ -348,6 +379,52 @@
             <figcaption>Gameplay</figcaption>
         </figure>
     </div>
+
+        <!-- DESIGN PRINCIPLES BEHIND THE SYSTEMS -->
+    <section id="project-context" class="case-section case-fullwidth">
+      <h3 class="case-section-heading">DESIGN PRINCIPLES BEHIND THE SYSTEMS</h3>
+
+      <div>
+        <div class="case-text">
+            <p>
+              While the shared space communicates social context moment-to-moment, the underlying systems were designed to interpret <strong>behavior over time</strong>, transforming interaction patterns into meaningful, non-intrusive signals.
+            </p>
+
+            <p>
+              Rather than focusing on individual productivity, Muster was intentionally designed to interpret <strong>interaction patterns and spatial behavior at a high level</strong>, translating everyday actions into readable signals about team dynamics.
+            </p>
+
+            <p>
+              Behind the scenes, the platform aggregates information such as presence, movement, interaction frequency, and shared space usage to surface trends over time.
+            </p>
+
+            <p>
+              The goal is not to monitor individuals, but to provide teams and leaders with contextual awareness, supporting earlier and more human conversations when collaboration patterns begin to shift.
+            </p>
+
+            <p>
+              Optional self-reported mood indicators add an additional layer of context without enforcing participation.
+            </p>
+
+            <p>
+              Another guiding principle was reducing cognitive overload.
+            </p>
+
+            <p>
+              Remote work often fragments attention across multiple tools, breaking flow and increasing friction. Muster was designed as a central spatial workspace where essential tools and social context coexist, minimizing context switching and keeping focus on collaboration rather than navigation.
+            </p>
+
+            <p>
+              Finally, performance and lightness were treated as core design constraints.
+            </p>
+
+            <p>
+              The platform needed to feel present without becoming heavy or intrusive. Every system decision was guided by the idea that Muster should support daily work quietly in the background, enhancing awareness and connection without competing for attention.
+            </p>
+        </div>
+      </div>
+    </section>
+
 
     <!-- REFLECTION -->
     <section id="project-context" class="case-section case-fullwidth">
